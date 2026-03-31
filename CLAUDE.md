@@ -107,3 +107,12 @@ Implementations: Franka (`robots/franka.py`), RBY1 (`robots/rby1.py`), floating 
 
 - Git submodule: `external_src/Manifold` (mesh processing)
 - `bpy==3.6.0` must be installed separately from Blender's PyPI index before other deps
+
+## Git & Collaboration Workflow
+
+- **Commit frequently**: when a logical unit of work is complete (new feature, bug fix, refactor), propose a commit. Do not batch unrelated changes.
+- **Always get approval first**: before committing, show the user the proposed commit message and list of files. Do not commit without explicit approval.
+- **Commit message style**: `type(scope): short description` (e.g. `feat(isaac):`, `fix(clutter):`, `docs:`, `chore:`). Body explains "why", not "what".
+- **After each commit**: add a one-line summary to the relevant `DEV_LOG.md` recording what was accomplished.
+- **Separate concerns**: reference code, documentation, and feature code go in separate commits.
+- **Never force-push** to shared branches without asking.
