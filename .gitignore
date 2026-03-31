@@ -39,6 +39,7 @@ rsync-*
 
 
 checkpoints/
+output/*
 
 typings
 eval_output/
